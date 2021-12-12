@@ -1,5 +1,16 @@
 /* CSS Document */
 
+.selective_txt {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Opera and Firefox */
+}
+
+
 #loader-wrapper {
     position: fixed;
     top: 0;
@@ -148,3 +159,14 @@
         margin: 0 auto;
         padding-bottom: 50px;
     }  
+@media (min-width:460px) {
+	.modal_child_a{
+		margin-left: 130px;
+	}
+}
+
+@media (max-width:460px){
+	.modal_child_a{
+		margin-left: 10px;
+	}
+}
