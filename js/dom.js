@@ -192,7 +192,7 @@ window.onload = () =>{
 			start_angle=100,
 			speed_and_channelsize=7, 
 			start_color_id=255,
-			opacity_max=.19,
+			opacity_max=.27,
 			opacity_min=0,
 			opacity_direction=true);
 	
