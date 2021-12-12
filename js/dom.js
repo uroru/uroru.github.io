@@ -179,6 +179,17 @@ function key_expand(delay, interv, first_width, last_width, out_delay = 1000, te
 
 
 window.onload = () =>{
+	var mediaQuery = window.matchMedia('(min-width: 460px)');
+	setInterval(()=>{
+		if(mediaQuery.matches){
+			if(!$('.main_photo_2').length)
+				$('#media_main').prepend('<img class="rounded-circle mr-3 ml-1 main_photo_2" src="images/logo.jpg" alt="Generic placeholder image">');
+		}
+		else
+			$('.main_photo_2').remove();
+
+	}, 1000);
+	
 	
 	setTimeout(function(){
 		$('body').addClass('loaded');
