@@ -1,4 +1,16 @@
-/* CSS Document */
+/*Copyright 2021 Hussein zahaki 
+
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.*/
 
 .selective_txt {
   -webkit-touch-callout: none; /* iOS Safari */
@@ -159,6 +171,37 @@
         margin: 0 auto;
         padding-bottom: 50px;
     }  
+
+	
+	.assets_section{
+		margin-left: auto;
+	}
+
+	.assets_section,
+	.assets_header{
+		font-size: 15px;
+	}
+	.assets_header{
+	margin-top: 7px;
+	margin-bottom: 7px;
+	font-weight: 500;
+	}
+
+@media (max-width:1200px){
+	.assets_section,
+	.assets_header{
+		font-size: 14px;
+	}
+	
+}
+
+@media (max-width:900px){
+	.assets_section{
+	margin-left: 15px;
+	}
+	
+}
+
 @media (min-width:460px) {
 	.modal_child_a{
 		margin-left: 130px;
@@ -180,3 +223,12 @@
 	  margin-bottom: 15px;
 	}
 }
+
+@media (max-width:300px){
+	.assets_section,
+	.assets_header{
+		font-size: 11px;
+	}
+	
+}
+

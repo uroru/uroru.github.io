@@ -180,6 +180,9 @@ function key_expand(delay, interv, first_width, last_width, out_delay = 1000, te
 
 window.onload = () =>{
 	var mediaQuery = window.matchMedia('(min-width: 460px)');
+	var mediaQuery_max900 = window.matchMedia('(max-width: 900px)');
+	var assets_section = $('.assets_section');
+	
 	setInterval(()=>{
 		if(mediaQuery.matches){
 			if(!$('.main_photo_2').length)
@@ -187,7 +190,14 @@ window.onload = () =>{
 		}
 		else
 			$('.main_photo_2').remove();
-
+		
+		
+		if(mediaQuery_max900.matches)
+			assets_section.removeClass( "col-md-4" ).addClass( "row" );
+		else
+			if(assets_section.hasClass('row'))
+				assets_section.removeClass( "row" ).addClass( "col-md-4" );
+		
 	}, 1000);
 	
 	
@@ -196,14 +206,14 @@ window.onload = () =>{
 		$('nav').css('display', '');
 		$('#project_section').css('width', '98%');
 		
-	}, 3000);
+	}, 500);
 	
 	menuFX(	interval=60,
 		  	buffer_size=40, 
 			start_angle=100,
 			speed_and_channelsize=7, 
 			start_color_id=255,
-			opacity_max=.27,
+			opacity_max=.2,
 			opacity_min=0,
 			opacity_direction=true);
 	
