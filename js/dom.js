@@ -206,7 +206,7 @@ window.onload = () =>{
 		$('nav').css('display', '');
 		$('#project_section').css('width', '98%');
 		
-	}, 500);
+	}, 3000);
 	
 	menuFX(	interval=60,
 		  	buffer_size=40, 
