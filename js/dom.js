@@ -107,6 +107,8 @@ function menuFX(interval,
 											opacity_min=opacity_min,
 											opacity_direction=opacity_direction);
 	
+//	bgproject.ontouchmove = (ev)=>{bgproject_apply.mouse_move(bgproject_apply, ev, bgproject)};
+	
 	bgproject.onmousemove = (ev)=>{bgproject_apply.mouse_move(bgproject_apply, ev, bgproject)};
 	setInterval(()=>{bgproject_apply.fx_apply();}, interval);
 	
