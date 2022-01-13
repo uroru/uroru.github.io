@@ -236,9 +236,9 @@ window.onload = () =>{
 	menuFX(	interval=60,
 		  	buffer_size=40, 
 			start_angle=100,
-			speed_and_channelsize=7, 
+			speed_and_channelsize=8, 
 			start_color_id=255,
-			opacity_max=.2,
+			opacity_max=.12,
 			opacity_min=0,
 			opacity_direction=true);
 	

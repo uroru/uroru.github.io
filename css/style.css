@@ -12,6 +12,10 @@
    See the License for the specific language governing permissions and
    limitations under the License.*/
 
+#keil_fsis{
+	border-color: #D4D4D4;
+}
+
 .selective_txt {
   -webkit-touch-callout: none; /* iOS Safari */
     -webkit-user-select: none; /* Safari */
@@ -240,4 +244,3 @@
 	}
 	
 }
-
